@@ -39,8 +39,10 @@ flutterVersion: stable
 # Build scripts to run for each platform.
 # Currently, the only supported value is "script".
 script:
+  - flutter clean
   - flutter pub get
   - flutter build apk
+  - flutter test
  # - flutter build ios --no-codesign
 
 # The list of artifacts to be published after a successful build.
