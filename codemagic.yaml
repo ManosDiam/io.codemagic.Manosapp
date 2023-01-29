@@ -45,8 +45,8 @@ script:
 
 # The list of artifacts to be published after a successful build.
 # You can use file globs to include multiple files.
-artifacts:
-  - build/app/outputs/**/*.apk
+## artifacts:
+#  - build/app/outputs/**/*.apk
  # - build/ios/iphoneos/Runner.app
 
 # Additional environment variables to be passed to the build script.
