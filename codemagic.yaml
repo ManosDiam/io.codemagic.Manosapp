@@ -12,13 +12,13 @@ flutterVersion: stable
 script:
   - flutter pub get
   - flutter build apk
-  - flutter build ios --no-codesign
+ # - flutter build ios --no-codesign
 
 # The list of artifacts to be published after a successful build.
 # You can use file globs to include multiple files.
 artifacts:
   - build/app/outputs/**/*.apk
-  - build/ios/iphoneos/Runner.app
+ # - build/ios/iphoneos/Runner.app
 
 # Additional environment variables to be passed to the build script.
 envVars:
@@ -38,13 +38,13 @@ workflows:
     #environment:
     #  variables:
     #    FLUTTER_STAGE: production
-   # script:
-   #   - flutter pub get
-   #   - flutter build apk --release
+    scripts:
+      - flutter pub get
+      - flutter build apk --release
    #   - flutter build ios --release
     artifacts:
       - build/app/outputs/apk/release/app-release.apk
-      - build/ios/iphoneos/Runner.ipa
+     # - build/ios/iphoneos/Runner.ipa
     #notifications:
      # email:
       #  recipients:
