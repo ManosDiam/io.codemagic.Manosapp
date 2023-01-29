@@ -1,6 +1,6 @@
 workflows:
   build-and-release:
-    name: Build and Release
+    name: "Build and Release"
     environment:
       flutter: stable
       scripts:
