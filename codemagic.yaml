@@ -69,8 +69,8 @@ workflows:
     environment:
         android_signing:
         - keystore_reference
-      variables:
-       FLUTTER_STAGE: production
+      #variables:
+      # FLUTTER_STAGE: production
     scripts:
       - flutter pub get
       - flutter build apk --release
