@@ -11,17 +11,20 @@ workflows:
 script:
 # Build for Android
   - flutter pub get
-  - flutter build apk --release
+  - flutter build apk
+artifacts:
+  - build/app/outputs/**/*.apk
+  - build/app/outputs/apk/release/app-release.apk
 
 envVars:
   - FLUTTER_STAGE: stable
-
+  
+scripts:
+      - flutter pub get
+      - flutter build apk --release
+      
 notifications:
   email:
     recipients:
     - mnsdiam@hotmail.gr
     - mochosgate1@gmail.com
-
-artifacts:
-      - build/app/outputs/**/*.apk
-      - build/app/outputs/apk/release/app-release.apk
