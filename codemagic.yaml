@@ -1,0 +1,54 @@
+# The name of the build configuration. This can be any string.
+name: Flutter Build
+
+# The environment for the build. Currently, the only supported value is "flutter".
+env: flutter
+
+# Flutter version to use for building the app.
+flutterVersion: stable
+
+# Build scripts to run for each platform.
+# Currently, the only supported value is "script".
+script:
+  - flutter pub get
+  - flutter build apk
+  - flutter build ios --no-codesign
+
+# The list of artifacts to be published after a successful build.
+# You can use file globs to include multiple files.
+artifacts:
+  - build/app/outputs/**/*.apk
+  - build/ios/iphoneos/Runner.app
+
+# Additional environment variables to be passed to the build script.
+envVars:
+  - FLUTTER_STAGE: stable
+
+# Defines the notification settings for the build.
+notifications:
+  email:
+    recipients:
+    - mnsdiam@hotmail.gr
+    - mochosgate1@gmail.com
+
+# Custom workflow script that allows you to automate build, test and deployment process.
+workflows:
+  build_and_publish:
+    name: Build and Publish
+    environment:
+      variables:
+        FLUTTER_STAGE: production
+    script:
+      - flutter pub get
+      - flutter build apk --release
+      - flutter build ios --release
+    artifacts:
+      - build/app/outputs/apk/release/app-release.apk
+      - build/ios/iphoneos/Runner.ipa
+    notifications:
+      email:
+        recipients:
+        - mnsdiam@hotmail.gr
+        - mochosgate1@gmail.com
+    when:
+      branch: master
