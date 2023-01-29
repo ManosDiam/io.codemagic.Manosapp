@@ -5,10 +5,10 @@ flutterVersion: stable
 workflows:
   build-and-release:
    # name: Build and Release
-    environment:
+   # environment:
       flutter: stable
       script:
-    - name: Set up local.properties
+    #- name: Set up local.properties
       script: | 
         echo "flutter.sdk=$HOME/programs/flutter" > "$CM_BUILD_DIR/android/local.properties"
     - name: Get Flutter packages
