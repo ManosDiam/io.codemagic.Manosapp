@@ -1,4 +1,4 @@
-package com.example.io_codemagic_manos_diamantakis_app
+package io.codemagic.Manosapp
 
 import io.flutter.embedding.android.FlutterActivity
 
