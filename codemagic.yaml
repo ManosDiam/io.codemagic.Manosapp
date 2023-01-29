@@ -3,7 +3,7 @@ workflows:
     name: Build and Release
     environment:
       flutter: latest
-    script:
+    scripts:
        - flutter pub get
        - flutter build apk
     artifacts:
