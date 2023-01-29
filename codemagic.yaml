@@ -66,9 +66,11 @@ notifications:
 workflows:
   build_and_publish:
     name: Build and Publish
-    #environment:
-    #  variables:
-    #    FLUTTER_STAGE: production
+    environment:
+        android_signing:
+        - keystore_reference
+      variables:
+       FLUTTER_STAGE: production
     scripts:
       - flutter pub get
       - flutter build apk --release
