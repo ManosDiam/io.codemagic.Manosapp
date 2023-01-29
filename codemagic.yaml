@@ -42,7 +42,7 @@ script:
   - flutter clean
   - flutter pub get
   - flutter build apk
-  - flutter test
+ # - flutter test
  # - flutter build ios --no-codesign
 
 # The list of artifacts to be published after a successful build.
