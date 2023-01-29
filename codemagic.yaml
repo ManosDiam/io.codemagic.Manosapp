@@ -1,6 +1,10 @@
+# The name of the build configuration. This can be any string.
+name: Flutter Build
+env: flutter
+flutterVersion: stable
 workflows:
   build-and-release:
-    name: "Build and Release"
+    name: Build and Release
     environment:
       flutter: stable
       scripts:
