@@ -35,20 +35,20 @@ notifications:
 workflows:
   build_and_publish:
     name: Build and Publish
-    environment:
-      variables:
-        FLUTTER_STAGE: production
-    script:
-      - flutter pub get
-      - flutter build apk --release
-      - flutter build ios --release
+    #environment:
+    #  variables:
+    #    FLUTTER_STAGE: production
+   # script:
+   #   - flutter pub get
+   #   - flutter build apk --release
+   #   - flutter build ios --release
     artifacts:
       - build/app/outputs/apk/release/app-release.apk
       - build/ios/iphoneos/Runner.ipa
-    notifications:
-      email:
-        recipients:
-        - mnsdiam@hotmail.gr
-        - mochosgate1@gmail.com
-    when:
-      branch: master
+    #notifications:
+     # email:
+      #  recipients:
+       # - mnsdiam@hotmail.gr
+       #- mochosgate1@gmail.com
+   # when:
+   #   branch: master
