@@ -1,5 +1,5 @@
 # The name of the build configuration. This can be any string.
-name: Flutter Build
+#name: Flutter Build
 env: flutter
 flutterVersion: stable
 workflows:
@@ -14,7 +14,7 @@ workflows:
    # - name: Get Flutter packages
       script: | 
         flutter packages pub get
-    - name: Build AAB with Flutter
+   # - name: Build AAB with Flutter
       script: | 
         flutter build appbundle --release
     artifacts:
