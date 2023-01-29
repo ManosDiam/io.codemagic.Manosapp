@@ -1,10 +1,12 @@
-# io_codemagic_manos_diamantakis_app
+# io.codemagic.Manosapp
 
-A new Flutter project.
+Codemagic.io Take Home Task
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This project is a starting point for a Flutter application, using the demo Flutter App from Visual Studio Code at:
+https://docs.flutter.dev/get-started/test-drive
+
 
 A few resources to get you started if this is your first Flutter project:
 
