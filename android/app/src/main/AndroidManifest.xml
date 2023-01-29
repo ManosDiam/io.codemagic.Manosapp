@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="io.codemagic.Manosapp">
    <application
-        android:label="io_codemagic_manos_diamantakis_app"
+        android:label="io.codemagic.Manosapp"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
