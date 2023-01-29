@@ -5,7 +5,7 @@ name: Flutter Build
 env: flutter
 
 # Flutter version to use for building the app.
-flutterVersion: 2.19.0
+flutterVersion: stable
 
 # Build scripts to run for each platform.
 # Currently, the only supported value is "script".
